@@ -192,8 +192,6 @@ const drawPoint = (ctx: CanvasRenderingContext2D, x: number, y: number, color = 
 }
 
 const isPointInsideTriangle = (t: number[][], p: number[]): number[] | null => {
-    // console.log(t);
-
     const e0 = sub(t[1], t[0]);
     const e1 = sub(t[2], t[1]);
     const e2 = sub(t[0], t[2]);
@@ -208,10 +206,6 @@ const isPointInsideTriangle = (t: number[][], p: number[]): number[] | null => {
 
     const area = len(cross(e0, sub(t[2], t[0])));
 
-    // console.log("dots: ");
-    // console.log(dot(normalize(c0), [0,0,-1]));
-    // console.log(dot(normalize(c1), [0,0,-1]));
-    // console.log(dot(normalize(c2), [0,0,-1])); 
     const bary = [len(c0) / area, len(c1) / area, len(c2) / area]
 
     const invV0z = 1 / t[0][2];
@@ -317,6 +311,4 @@ class Obj3d {
         this.faces = faces;
         this.texture = texture;
     }
-
-
 }
