@@ -5,7 +5,7 @@ const verts: number[][] = [
     [5, -5, -10]
 ];
 
-const cubeVerts = [
+const cubeVerts: number[][] = [
     [-5, 5, 5],
     [5, 5, 5],
     [5, -5, 5],
@@ -17,7 +17,7 @@ const cubeVerts = [
     [-5, -5, -5],
 ];
 
-const floorVerts = [
+const floorVerts: number[][] = [
     [-5, 0, -5],
     [5, 0, -5],
     [5, 0, 5],
@@ -57,8 +57,6 @@ const cubeFaces: Face[] = [
     { indices: [4, 5, 6], textureCoords: [[0, 1], [1, 1], [1, 0]] },
 
 ];
-
-
 
 const faces: { indices: number[], textures: number[][] }[] = [
     { indices: [0, 1, 2], textures: [[0, 1], [1, 0], [0, 0]] },
