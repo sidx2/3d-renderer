@@ -138,7 +138,7 @@
 
         const imageData: ImageData = new ImageData(data, canvas.width, canvas.height);
         ctx.putImageData(imageData, 0, 0);
-        angle += 0.04;
+        
         update(deltaTime);
         window.requestAnimationFrame(loop);
     }
