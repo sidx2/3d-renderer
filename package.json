@@ -1,0 +1,17 @@
+{
+  "name": "27-07-2024",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc src/**/*.ts -t es6 --outDir ./dist -w",
+    "compile": "tsc src/**/*.ts -t es6 --outDir ./dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^5.5.4"
+  }
+}

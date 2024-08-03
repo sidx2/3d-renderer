@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+    background-color: #181818;
+}
+
+.instructions {
+    margin: 7px;
+    text-align: center;
+}
+
+.canvasHolder {
+    display: flex;
+    justify-content: center;
+    height: 95vh;
+    justify-content: center;
+}
